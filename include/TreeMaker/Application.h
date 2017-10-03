@@ -1,10 +1,14 @@
 #pragma once
+#include <TreeMaker/File.h>
+#include <TreeMaker/Box/Object.h>
 
 namespace tree{
-    class Application final{
+    class Application{
     public:
-        static void init();
+        Application();
+        void init();
     private:
-        Application(){}
+        
+        File file;
     };
 }
