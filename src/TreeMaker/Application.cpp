@@ -8,7 +8,12 @@ namespace tree{
 
     }
 
+    Application::~Application(){
+        delete tree;
+    }
+
 
     void Application::init(){
+        file.fill(tree);
     }
 }

@@ -2,7 +2,9 @@
 
 namespace tree{
     namespace box{
-        Object::Object(){
+        Object::Object(std::string& name) : 
+            name(name)
+        {
 
         }
 

@@ -7,7 +7,7 @@ namespace tree{
         file.close();
     }
 
-    std::string File::getText(){
-
+    void File::fill(box::Object* tree){
+        
     }
 }

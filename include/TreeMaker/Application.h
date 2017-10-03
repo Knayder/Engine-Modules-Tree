@@ -6,9 +6,10 @@ namespace tree{
     class Application{
     public:
         Application();
+        ~Application();
         void init();
     private:
-        
+        box::Object* tree;
         File file;
     };
 }
