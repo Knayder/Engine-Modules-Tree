@@ -1,9 +1,10 @@
 #include <TreeMaker/Application.h>
-
+#include <iostream>
 
 namespace tree{
     Application::Application() :
-        file("input.txt")
+        file("input.txt"),
+        tree(nullptr)
     {
 
     }
@@ -14,6 +15,8 @@ namespace tree{
 
 
     void Application::init(){
-        file.fill(tree);
+        std::string name = "Engine";
+        tree = file.fill(new box::Object(name));
+        std::cout << tree->get(0)->get(1)->get(0)->totalSize() << std::endl;
     }
 }

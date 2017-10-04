@@ -8,13 +8,22 @@ namespace tree{
         public:
             Object(std::string& name);
             ~Object();
-
             bool isEmpty();
-            void add(Object* newObject);
+            Object* add(Object* newObject);
             Object* get(unsigned int index);
+
+            unsigned int elements();
+
+            unsigned int totalSize();
+
+            std::string getName();
+
+            void setSize(unsigned int newSize);
+            void addSize(unsigned int toAdd);
+            unsigned int getSize();
         private:
             std::string name;
-
+            unsigned int size;
             std::vector<Object*> container;
         };
     }
